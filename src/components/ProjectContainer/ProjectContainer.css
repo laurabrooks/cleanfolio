@@ -4,10 +4,12 @@
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .project:hover {
-  transform: translateY(-7px);
+  box-shadow: var(--shadow-extra);
 }
 
 .project__description {
@@ -28,6 +30,11 @@
   color: var(--clr-fg-alt);
 }
 
+.project__link-container {
+  margin-top: 1.2em;
+}
+
 .project .link--icon {
   margin-left: 0.5em;
+  margin-top: 1.2em;
 }

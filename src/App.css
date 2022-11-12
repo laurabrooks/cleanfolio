@@ -10,8 +10,9 @@
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-primary: #554D91;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow-extra: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 
 .dark {
@@ -22,6 +23,8 @@
   --clr-primary: #90a0d9;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --shadow-extra: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
 }
 
 main {
@@ -83,12 +86,10 @@ main {
 
 .btn {
   display: block;
-  cursor: pointer;
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: lowercase;
-  transition: transform 0.2s ease-in-out;
 }
 
 .btn--outline {
@@ -129,7 +130,7 @@ main {
 }
 
 .btn--plain:hover {
-  transform: translateY(-4px);
+  box-shadow: var(--shadow-extra);
 }
 
 .btn--icon {

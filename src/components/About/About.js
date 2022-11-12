@@ -1,6 +1,8 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { about } from '../../portfolio'
+import ResumePDF from '../../assets/resume.pdf';
+import WorkspaceSVG from '../../assets/workspace.svg'
 import './About.css'
 
 const About = () => {
@@ -19,7 +21,7 @@ const About = () => {
 
       <div className='about__contact center'>
         {resume && (
-          <a href={resume}>
+          <a href={ResumePDF} target="_blank" rel='noreferrer noopener'>
             <span type='button' className='btn btn--outline'>
               Resume
             </span>
@@ -31,6 +33,8 @@ const About = () => {
             {social.github && (
               <a
                 href={social.github}
+                target="_blank"
+                rel='noreferrer noopener'
                 aria-label='github'
                 className='link link--icon'
               >
@@ -41,6 +45,8 @@ const About = () => {
             {social.linkedin && (
               <a
                 href={social.linkedin}
+                target="_blank"
+                rel='noreferrer noopener'
                 aria-label='linkedin'
                 className='link link--icon'
               >
@@ -49,6 +55,10 @@ const About = () => {
             )}
           </>
         )}
+      </div>
+
+      <div className='about__illustration center'>
+        <img src={WorkspaceSVG} alt="Desk illustration" />
       </div>
     </div>
   )
