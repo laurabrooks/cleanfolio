@@ -1,71 +1,60 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'https://laurabrooks.github.io/',
+  title: 'LB.',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
-  description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+  name: 'Laura Brooks',
+  role: 'Full Stack Developer',
+  description: 'I\'m based in Washington DC and currently a Senior Software Engineer and Tech Lead at Capital One. I\'m an AWS Certified Solutions Architect and build full stack applications.',
+  resume: 'https://laurabrooks.github.io/resume.html',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/laura-a-brooks/',
+    github: 'https://github.com/laurabrooks',
   },
 }
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Asteroids',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Game developed using the p5.js visualization library. Press \'c\' while playing for a surprise.',
+    stack: ['Javascript', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/laurabrooks/asteroids',
+    livePreview: 'https://laurabrooks.github.io/asteroids/',
   },
   {
-    name: 'Project 2',
+    name: 'Campaign Finance Visualization',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Campaign Finance data visualization project based on 2015 presidential campaign data.',
+    stack: ['Javascript', 'HTML', 'CSS', 'D3.js', 'Data Viz'],
+    sourceCode: 'https://github.com/laurabrooks/campaignviz',
+    livePreview: 'https://laurabrooks.github.io/campaignviz/#',
   },
   {
-    name: 'Project 3',
+    name: 'Ansible Galaxy Redesign',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'For my Senior Capstone project partnered with Red Hat, I worked with a team to conduct human factors research and design an improved UI for Ansible Galaxy. See the full process and results, documented by my teammate.',
+    livePreview: 'https://jacobcaccamo.com/redhat-ansible-galaxy/',
   },
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
   'JavaScript',
-  'TypeScript',
+  'AWS',
+  'Node.js',
+  'Vue',
   'React',
   'Redux',
-  'SASS',
-  'Material UI',
-  'Git',
+  'Python',
+  'Java',
   'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Git',
+  'Agile',
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'itslaurabrooks@gmail.com',
 }
 
 export { header, about, projects, skills, contact }

@@ -17,8 +17,21 @@
 }
 
 .about__desc,
-.about__contact {
+.about__illustration {
   margin-top: 2.4em;
+}
+
+.about__contact {
+  margin-top: 1.5em;
+}
+
+.about__illustration {
+  justify-content: center;
+  position: relative;
+}
+
+.about__illustration img {
+  max-width: 80%;
 }
 
 .about .link--icon {
